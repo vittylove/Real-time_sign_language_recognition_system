@@ -1,0 +1,22 @@
+[name]
+model_name=coco
+
+[train-configure]
+epochs=300
+steps=150,250
+batch_size=128
+subdivisions=1
+learning_rate=0.001
+
+[model-configure]
+pre_weights=None
+classes=26
+width=416
+height=416
+anchor_num=3
+anchors=120.55,97.22, 148.54,151.12, 185.12,214.38, 228.47,147.84, 259.63,210.48, 268.54,291.81
+
+[data-configure]
+train=./data/data/train/train.txt
+val=./data/data/valid/valid.txt
+names=./data/coco.names
